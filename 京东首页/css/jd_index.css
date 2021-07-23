@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* 顶部导航栏部分 */
+.shortcut {
+  background: #e3e4e6;
+  /* font-size:12px;line-height:1.5em，即字符高度的1.5倍 */
+  font: 12px/1.5 "Microsoft YaHei";
+}
+
+.shortcut__location .iconfont {
+  color: red;
+  vertical-align: middle;
+}
+
+.shortcut__location .location__name {
+  color: #999;
+
+}
+
+/* 鼠标移动到区域，变红 */
+.shortcut__location:hover .location__name {
+  color: #e1251b;
+}
+
+.shortcut__content {
+  height: 30px;
+  line-height: 30px;
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.shortcut__location {
+  float: left;
+  cursor: Pointer;
+}
+
+.shortcut__box {
+  position: relative;
+  z-index: 200;
+  padding: 0 4px;
+  border: 1px solid transparent;
+}
+
+.shortcut__location:hover .shortcut__box {
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
+
+.shortcut__location a {
+  text-decoration: none;
+  color: #999;
+}
+
+.shortcut__location:hover .dropdown {
+  display: block;
+  background-color: white;
+}
+
+.shortcut__location .dropdown {
+  position: absolute;
+  display: none;
+  top: 30px;
+  z-index: 150;
+  box-sizing: border-box;
+  width: 322px;
+  height: 464px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  line-height: normal;
+  color: #000;
+}
+
+.shortcut__location .dropdown__list {
+  /* 元素被拉伸以适应容器 */
+  display: flex;
+  /*自动换行属性 */
+  flex-wrap: wrap;
+}
+
+/* 在每一个子div后面加上分割线 */
+.shortcut__location .dropdown__list::after {
+  content: "";
+  flex: auto;
+  display: block;
+  height: 0.5px;
+  width: 100px;
+  margin: 8px 10px;
+  background-color: #c4c1c1;
+}
+
+.shortcut__location .dropdown__to {
+  display: inline-block;
+  margin: 0 8px;
+  margin-bottom: 5px;
+  padding: 4px 10px;
+}
+
+.shortcut__location .dropdown__to:hover {
+  background-color: #e2d3d3;
+  color: red;
+}
+
+.shortcut__location .dropdown__exclusive {
+  margin: 0 8px;
+}
+
+/* 在每一个子div后面加上分割线 */
+.shortcut__location .dropdown__exclusive::after {
+  content: "";
+  flex: auto;
+  display: block;
+  height: 0.5px;
+  margin: 10px 0;
+  background-color: #c4c1c1;
+}
+
+.shortcut__location .dropdown__title {
+  margin: 5px 0;
+}
+
+.shortcut__location .dropdown__menuitem {
+  /* inline（行内元素），block（块级元素），inline-block不独占一行的块级元素 */
+  display: inline-block;
+  width: 49%;
+  margin: 5px 0;
+}
+
+.shortcut__location .dropdown__menuitem:hover {
+  color: red;
+}
+
+.shortcut__location .dropdown__international {
+  margin: 15px 8px;
+}
+
+.shortcut__nav-top {
+  float: right;
+  line-height: 30px;
+  color: #575555;
+}
+.shortcut__nav-top a {
+  text-decoration: none;
+  color: #999;
+}
+/* 伪类选择器：a:nth-child ( n ) 表示匹配父元素中第n个元素被选中 */
+.shortcut__nav-top span:last-child {
+  margin-right: 10px;
+}
+
+.shortcut__nav-top .nav-top__item {
+  display: inline-block;
+  height: 30px;
+  padding: 0 8px;
+  cursor: Pointer;
+}
+
+.shortcut__nav-top .nav-top__item:hover {
+  color: red;
+}
+
+.shortcut__nav-top .myjd {
+  position: relative;
+  display: inline-block;
+}
+
+.shortcut__nav-top .myjd:hover .myjd__to {
+  border: 1px solid lightgray;
+  border-top: none;
+  border-bottom: none;
+  background-color: white;
+}
+
+.shortcut__nav-top .myjd:hover .myjd__dropdown {
+  display: block;
+}
+
+.shortcut__nav-top .myjd__to {
+  z-index: 2;
+  border: 1px solid transparent;
+}
+
+.shortcut__nav-top .myjd__dropdown {
+  position: absolute;
+  display: none;
+  top: 29px;
+  z-index: 12;
+  width: 282px;
+  height: 163px;
+  border: 1px solid lightgray;
+  background-color: white;
+  line-height: 25px;
+}
+
+.shortcut__nav-top .myjd__fore {
+  padding: 5px 0 0 15px;
+}
+
+.shortcut__nav-top .myjd__fore::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+
+  margin: 10px 0 10px -15px;
+  background-color: #ccc;
+}
+
+.shortcut__nav-top .myjd__after {
+  padding: 0 0 0 15px;
+}
+
+.shortcut__nav-top .myjd__item {
+  display: inline-block;
+  width: 47%;
+}
+
+.shortcut__nav-top .myjd__item a:hover {
+  color: red;
+}
+
+.shortcut__nav-top .procurementa {
+  position: relative;
+  display: inline-block;
+
+}
+.shortcut__nav-top .procurementa:hover .procurementa--active {
+  border: 1px solid lightgray;
+  border-bottom: none;
+  background-color: white;
+}
+
+.shortcut__nav-top .procurementa:hover .procurementa__dropdown {
+  display: block;
+  border: 1px solid lightgray;
+}
+
+.shortcut__nav-top .procurementa>a:visited {
+  color: red;
+}
+
+.shortcut__nav-top .procurementa--active {
+  position: relative;
+  z-index: 2;
+  border: 1px solid transparent;
+}
+
+.shortcut__nav-top .procurementa__dropdown {
+  position: absolute;
+  display: none;
+  top: 30px;
+  z-index: 12;
+  width: 140px;
+  height: 120px;
+  padding: 10px 0 10px 15px;
+  background-color: white;
+  line-height: 25px;
+}
+
+.shortcut__nav-top .procurementa__item {
+  display: inline-block;
+}
+
+.shortcut__nav-top .procurementa__item a:hover {
+  color: red;
+}
+
+.shortcut__nav-top .procurementa__item:nth-child(odd) {
+  width: 50px;
+}
+
+.shortcut__nav-top .procurementa__item:last-child {
+  width: 100px;
+}
+/* 客户服务 */
+.shortcut__nav-top .shortcutService {
+  position: relative;
+  display: inline-block;
+}
+
+.shortcut__nav-top .shortcutService:hover .shortcutService--active {
+  border: 1px solid lightgray;
+  border-bottom: none;
+  background-color: white;
+}
+
+.shortcut__nav-top .shortcutService:hover .shortcutService__dropdown {
+  display: block;
+  border: 1px solid lightgray;
+}
+.shortcut__nav-top .shortcutService__dropdown1{
+  margin: 0 8px;
+}
+.shortcut__nav-top .shortcutService__dropdown2{
+  margin: 0 8px;
+}
+.shortcut__nav-top .shortcutService__dropdown1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: auto;
+  margin: 10px 0;
+  background-color: #ccc;
+}
+.shortcut__nav-top .shortcutService--active {
+  position: relative;
+  z-index: 2;
+  border: 1px solid transparent;
+}
+
+.shortcut__nav-top .shortcutService__dropdown {
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: -92px;
+  z-index: 12;
+  width: 152px;
+  height: 270px;
+  padding: 10px 9px 10px 15px;
+  background-color: white;
+  line-height: 25px;
+}
+.shortcut__nav-top .shortcutService__item{
+  display: inline-block;
+  width: 45%;
+}
+/* 手机京东 */
+
+.shortcut__nav-top .phone {
+  /* 子绝父相，定位 */
+  position: relative;
+}
+
+.shortcut__nav-top .phone:hover {
+  color: initial;
+}
+/* 外壳 */
+.shortcut__nav-top .phone:hover .phone__dropdown {
+  display: block;
+}
+
+.shortcut__nav-top .phone__dropdown {
+  position: absolute;
+  display: none;
+  top: 29px;
+  left: -130px;
+  z-index: 12;
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid #ccc;
+  background-color: white;
+  line-height: 20px;
+}
+/* 三角形指标 */
+.shortcut__nav-top .phone__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 152px;
+  width: 0;
+  height: 0;
+  border-width:10px;
+  border-style:solid;
+  border-color: transparent transparent white transparent;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__jdapp {
+  padding: 15px 0 15px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__imgapp {
+  float: left;
+  width: 80px;
+  margin-right: 5px;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe {
+  display: inline-block;
+  width: 90px;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe:nth-of-type(2) {
+  color: red;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe:last-of-type i {
+  display: inline-block;
+  width: 27px;
+  height: 26px;
+  margin-top: 5px;
+  background-image: url("../images/a.png");
+  background-repeat: no-repeat;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe:last-of-type i:nth-child(1) {
+  background-position: left right;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe:last-of-type i:nth-child(2) {
+  background-position: left center;
+}
+
+.shortcut__nav-top .phone__dropdown .phone__describe:last-of-type i:nth-child(3) {
+  background-position: left bottom;
+}
+

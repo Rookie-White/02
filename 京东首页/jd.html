@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仿京东首页</title>
+
+  <link rel="stylesheet" href="./css/jd_index.css">
+  <link rel="stylesheet" href="./css/jd_header.css">
+  <link rel="stylesheet" href="./css/jd_main_focus.css">
+  <link rel="stylesheet" href="./css/jd_seckill.css">
+  <link rel="stylesheet" href="./css/jd_footer.css">
+  <link rel="stylesheet" href="./css/jd_specialOffer.css">
+  <!-- 引入阿里巴巴图标：1、下载代码 2、根路径找到 3、复制图标代码引入 -->
+  <link rel="stylesheet" href="./css/font_kxh1khtbma/iconfont.css">
+  <link rel="stylesheet" href="./css/font_1yve8kkeu79h/iconfont.css">
+  <link rel="stylesheet" href="./css/font_g9oicm49ltl/iconfont.css">
+  <link rel="stylesheet" href="./css/font_m8of6frpagf/iconfont.css">
+  <link rel="stylesheet" href="./css/font_ra4p5rbopyq/iconfont.css">
+</head>
+
+<body>
+  <div>
+    <!-- 顶部导航 -->
+    <!-- 这一层主要是背景铺设 -->
+    <div class="shortcut">
+      <!-- 这一层是为具体内容div,居中显示 -->
+      <div class="shortcut__content">
+        <!-- 左边部分地址信息 -->
+        <div class="shortcut__location">
+          <div class="shortcut__box">
+            <i class="iconfont">&#xe609;</i>
+            <span class="location__name">湖南</span>
+          </div>
+          <!-- 坐标下拉表 -->
+          <div class="dropdown">
+            <div class="dropdown__list">
+              <span><a class="dropdown__to" href="">北京</a></span>
+              <span><a class="dropdown__to" href="">上海</a></span>
+              <span><a class="dropdown__to" href="">天津</a></span>
+              <span><a class="dropdown__to" href="">重庆</a></span>
+              <span><a class="dropdown__to" href="">河北</a></span>
+              <span><a class="dropdown__to" href="">山西</a></span>
+              <span><a class="dropdown__to" href="">河南</a></span>
+              <span><a class="dropdown__to" href="">辽宁</a></span>
+              <span><a class="dropdown__to" href="">吉林</a></span>
+              <span><a class="dropdown__to" href="">湖南</a></span>
+              <span><a class="dropdown__to" href="">海南</a></span>
+              <span><a class="dropdown__to" href="">贵州</a></span>
+              <span><a class="dropdown__to" href="">云南</a></span>
+              <span><a class="dropdown__to" href="">西藏</a></span>
+              <span><a class="dropdown__to" href="">陕西</a></span>
+              <span><a class="dropdown__to" href="">海南</a></span>
+              <span><a class="dropdown__to" href="">贵州</a></span>
+              <span><a class="dropdown__to" href="">云南</a></span>
+              <span><a class="dropdown__to" href="">西藏</a></span>
+              <span><a class="dropdown__to" href="">陕西</a></span>
+              <span><a class="dropdown__to" href="">海南</a></span>
+              <span><a class="dropdown__to" href="">贵州</a></span>
+              <span><a class="dropdown__to" href="">云南</a></span>
+              <span><a class="dropdown__to" href="">西藏</a></span>
+              <span><a class="dropdown__to" href="">陕西</a></span>
+              <span><a class="dropdown__to" href="">海南</a></span>
+              <span><a class="dropdown__to" href="">贵州</a></span>
+              <span><a class="dropdown__to" href="">云南</a></span>
+              <span><a class="dropdown__to" href="">西藏</a></span>
+              <span><a class="dropdown__to" href="">陕西</a></span>
+              <span><a class="dropdown__to" href="">海南</a></span>
+              <span><a class="dropdown__to" href="">贵州</a></span>
+              <span><a class="dropdown__to" href="">云南</a></span>
+              <span><a class="dropdown__to" href="">西藏</a></span>
+              <span><a class="dropdown__to" href="">陕西</a></span>
+            </div>
+            <div class="dropdown__exclusive">
+              <h4 class="dropdown__title">地区专享版本</h4>
+              <div>
+                <span>
+                  <a class="dropdown__menuitem" href="">中國港澳</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">中國台灣</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">京东全球</a>
+                </span>
+              </div>
+            </div>
+            <div class="dropdown__international">
+              <h4 class="dropdown__title">Available Sites</h4>
+              <div>
+                <span>
+                  <a class="dropdown__menuitem" href="">中國港澳</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">中國台灣</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">京东全球</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">京东全球</a>
+                </span>
+                <span>
+                  <a class="dropdown__menuitem" href="">京东全球</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右边部分信息 -->
+        <div class="shortcut__nav-top">
+          <span>
+            <a class="nav-top__item" href="">你好，请登录</a>
+            <a class="nav-top__reg--current" style="color: red;margin-right: 10px;" href="">免费注册</a>
+          </span>|
+          <span><a class="nav-top__item" href="">我的订单</a></span>|
+          <!-- 我的京东 -->
+          <span class="myjd">
+            <a class="nav-top__item myjd__to" href="">我的京东
+              <i class="iconfont icon-tubiao-"></i>
+            </a>
+            <div class="myjd__dropdown">
+              <div class="myjd__fore">
+                <span class="myjd__item"><a href="">待处理订单</a></span>
+                <span class="myjd__item"><a href="">我的回答</a></span>
+                <span class="myjd__item"><a href="">返修退换货</a></span>
+                <span class="myjd__item"><a href="">我的关注</a></span>
+                <span class="myjd__item"><a href="">降价商品</a></span>
+              </div>
+              <div class="myjd__after">
+                <span class="myjd__item"><a href="">我的京豆</a></span>
+                <span class="myjd__item"><a href="">我的优惠券</a></span>
+                <span class="myjd__item"><a href="">我的白条</a></span>
+                <span class="myjd__item"><a href="">我的理财</a></span>
+              </div>
+            </div>
+          </span> |
+          <span><a class="nav-top__item" href="">京东会员</a></span> |
+          <!-- 企业采购 -->
+          <span class="procurementa">
+            <a class="nav-top__item procurementa--active" href="">企业采购 <i class="iconfont icon-tubiao-"></i></a>
+            <div class="procurementa__dropdown">
+              <span class="procurementa__item"><a href="">企业购</a></span>
+              <span class="procurementa__item"><a href="">商用场景馆</a></span>
+              <span class="procurementa__item"><a href="">工业品</a></span>
+              <span class="procurementa__item"><a href="">丰客多商城</a></span>
+              <span class="procurementa__item"><a href="">礼品卡</a></span>
+              <span class="procurementa__item"><a href="">微信企业购</a></span>
+              <span class="procurementa__item"><a href="">工品优选</a></span>
+              <span class="procurementa__item"><a href="">京东锦礼</a></span>
+              <span class="procurementa__item"><a href="">大中型企业采购</a></span>
+            </div>
+          </span> |
+          <!-- 客户服务 -->
+          <span class="shortcutService">
+            <a class="nav-top__item shortcutService--active" href="">
+              客户服务 <i class="iconfont icon-tubiao-"></i></a>
+
+            <div class="shortcutService__dropdown">
+              <div class="shortcutService__dropdown1">
+                <h4 class="dropdown__title">客户</h4>
+                <span class="shortcutService__item"><a href="">帮助中心</a></span>
+                <span class="shortcutService__item"><a href="">售后服务</a></span>
+                <span class="shortcutService__item"><a href="">在线客服</a></span>
+                <span class="shortcutService__item"><a href="">意见建议</a></span>
+                <span class="shortcutService__item"><a href="">电话客服</a></span>
+                <span class="shortcutService__item"><a href="">客服邮箱</a></span>
+                <span class="shortcutService__item"><a href="">金融咨询</a></span>
+                <span class="shortcutService__item"><a href="">全球售客服</a></span>
+                <span class="shortcutService__item"><a href="">企业客服</a></span>
+              </div>
+              <div class="shortcutService__dropdown2">
+                <h4 class="dropdown__title"> 商户</h4>
+                <span class="shortcutService__item"><a href="">合作招商</a></span>
+                <span class="shortcutService__item"><a href="">成长中心</a></span>
+                <span class="shortcutService__item"><a href="">商家后台</a></span>
+                <span class="shortcutService__item"><a href="">京麦工作台</a></span>
+                <span class="shortcutService__item"><a href="">商家帮助</a></span>
+                <span class="shortcutService__item"><a href="">规则平台</a></span>
+              </div>
+            </div>
+          </span> |
+          <!-- 网站导航 -->
+          <span class="nav-top__item">网站导航 <i class="iconfont icon-tubiao-"></i></span> |
+          <!-- 手机京东 -->
+          <span class="nav-top__item phone">手机京东
+            <div class="phone__dropdown">
+              <div class="phone__jdapp">
+                <img class="phone__imgapp" src="./images/ww.webp" alt="">
+                <span class="phone__describe">手机京东</span>
+                <span class="phone__describe">新人专享大礼包</span>
+                <span class="phone__describe">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </span>
+              </div>
+              <div class="phone__jdapp">
+                <img class="phone__imgapp" src="./images/ww.webp" alt="">
+                <span class="phone__describe">手机京东</span>
+                <span class="phone__describe">新人专享大礼包</span>
+                <span class="phone__describe">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </span>
+              </div>
+              <div class="phone__jdapp">
+                <img class="phone__imgapp" src="./images/ww.webp" alt="">
+                <span class="phone__describe">手机京东</span>
+                <span class="phone__describe">新人专享大礼包</span>
+                <span class="phone__describe">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- 搜索框部分 -->
+    <div class="header">
+      <div class="shortcut__content">
+        <!-- 左边京东logo -->
+        <div class="header-inner__logo">
+          <h1 class="logo_tit">
+            <a href="./index.html">
+              <img id="logo" src="./images/logo.gif" alt="jd" title="jd">
+            </a>
+          </h1>
+        </div>
+        <!-- 中间搜索框 -->
+        <div class="header-inner__search">
+
+          <div class="search__box">
+            <input class="search__bar" type="text" placeholder="蓝牙鼠标">
+            <a class="photo-search-login" href="">
+              <i class="iconfont icon-xiangji"></i>
+            </a>
+            <button class="button">
+              <a class="search-button" href="">
+                <i class="iconfont icon-fangdajing"></i>
+              </a>
+            </button>
+          </div>
+          <div id="settleup">
+            <div class="shopping">
+
+              <a class="shopping__car" href="" style="color: red;"> <i class="iconfont icon-gouwuche3"></i>我的购物车</a>
+              <i class="shopping__goods-count">0</i>
+            </div>
+          </div>
+          <div id="hotwords">
+            <ul>
+              <li class="hotwords__item current"><a class="style-red" href="">京东泳装节 </a> </li>
+              <li class="hotwords__item"><a href="">自营电脑 </a> </li>
+              <li class="hotwords__item"><a href="">88购物节 </a> </li>
+              <li class="hotwords__item"><a href="">新风空调 </a> </li>
+              <li class="hotwords__item"><a href="">清凉节 </a> </li>
+              <li class="hotwords__item"><a href="">斗破苍穹 </a> </li>
+              <li class="hotwords__item"><a href="">品质男装 </a> </li>
+              <li class="hotwords__item"><a href="">电脑数码 </a> </li>
+              <li class="hotwords__item"><a href="">家装建材 </a> </li>
+            </ul>
+          </div>
+          <div class="navitems">
+            <ul>
+              <li class="navitems__look-my"><a href=""> 秒杀 </a></li>
+              <li class="navitems__look-my"><a href=""> 优惠券 </a></li>
+              <li class="navitems__look-my"><a href=""> PLUS会员 </a></li>
+              <li class="navitems__look-my"><a href=""> 品牌闪购 </a></li>
+              <li class="navitems__look-my"><a href=""> 拍卖 </a></li>
+              <li class="navitems__look-my"><a href=""> 京东家电 </a></li>
+              <li class="navitems__look-my"><a href=""> 京东超市 </a></li>
+              <li class="navitems__look-my"><a href=""> 京东生鲜 </a></li>
+              <li class="navitems__look-my"><a href=""> 京东国际 </a></li>
+              <li class="navitems__look-my"><a href=""> 京东云 </a><i class="navitems__icon-hot"></i></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右边图片链接 -->
+        <div class="header-inner__promo"><a class="promo__to" href=""></a></div>
+      </div>
+    </div>
+    <!-- 轮播图部分 -->
+    <div class="main-focus-div">
+      <div class="main-focus">
+        <div class="category">
+          <ul class="clearfix">
+            <li class="category__menu-item">
+              <a class="category__to" href="">家用电器</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 手机 </a><span>/</span>
+              <a class="category__to" href=""> 运营商 </a><span>/</span><a class="category__to" href=""> 数码 </a>
+
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 电脑 </a><span>/</span><a class="category__to" href=""> 办公 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 家居 </a><span>/</span>
+              <a class="category__to" href=""> 家具 </a><span>/</span>
+              <a class="category__to" href=""> 家装 </a><span>/</span>
+              <a class="category__to" href=""> 厨具 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 家用电器 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 手机 </a><span>/</span>
+              <a class="category__to" href=""> 运营商 </a><span>/</span><a class="category__to" href=""> 数码</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 电脑 </a><span>/</span><a class="category__to" href=""> 办公</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 家居 </a><span>/</span>
+              <a class="category__to" href=""> 家具 </a><span>/</span>
+              <a class="category__to" href=""> 家装 </a><span>/</span>
+              <a class="category__to" href=""> 厨具 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 家用电器 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 手机 </a><span>/</span>
+              <a class="category__to" href=""> 运营商 </a><span>/</span><a class="category__to" href=""> 数码</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">电脑 </a><span>/</span><a class="category__to" href=""> 办公</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">家居 </a><span>/</span>
+              <a class="category__to" href="">家具 </a><span>/</span>
+              <a class="category__to" href="">家装 </a><span>/</span>
+              <a class="category__to" href="">厨具 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">家用电器</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">手机 </a><span>/</span>
+              <a class="category__to" href="">运营商</a><span>/</span><a class="category__to" href=""> 数码</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">电脑</a><span>/</span><a class="category__to" href=""> 办公</a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">家居 </a><span>/</span>
+              <a class="category__to" href="">家具 </a><span>/</span>
+              <a class="category__to" href="">家装 </a><span>/</span>
+              <a class="category__to" href="">厨具 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href="">手机 </a><span>/</span>
+              <a class="category__to" href="">运营商 </a><span>/</span><a class="category__to" href=""> 数码 </a>
+            </li>
+            <li class="category__menu-item">
+              <a class="category__to" href=""> 电脑 </a><span>/</span><a class="category__to" href=""> 办公</a>
+              <div class="category__channel clearfix">
+                <div class="channel__left">
+                  <ul class="clearfix">
+                    <li><a class="channel__lookmy--left" href=""> 家电馆 <i class="iconfont iconxiangyouxuanze"></i></a>
+                    </li>
+                    <li><a class="channel__lookmy--left" href=""> 家电馆 <i class="iconfont iconxiangyouxuanze"></i></a>
+                    </li>
+                    <li><a class="channel__lookmy--left" href=""> 家电馆 <i class="iconfont iconxiangyouxuanze"></i></a>
+                    </li>
+                    <li><a class="channel__lookmy--left" href=""> 家电馆 <i class="iconfont iconxiangyouxuanze"></i></a>
+                    </li>
+
+                    <li><a class="channel__lookmy--left" href=""> 家电馆 <i class="iconfont iconxiangyouxuanze"></i></a>
+                    </li>
+                  </ul>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a></dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                  <dl class="channel__detail clearfix">
+                    <dt class="channel__detail-item channel__detail-main"><a href="">电视 <i
+                          class="iconfont iconxiangyouxuanze"></i></a>
+                    </dt>
+                    <dd class="channel__detail-item"><a href="">全面屏电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">教育电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">OLED电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">智慧屏</a></dd>
+                    <dd class="channel__detail-item"><a href="">4K超清电视</a></dd>
+                    <dd class="channel__detail-item"><a href="">55英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">65英寸</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                    <dd class="channel__detail-item"><a href="">电视配件</a></dd>
+                  </dl>
+                </div>
+                <div class="channel__right">
+                  <ul class="clearfix">
+                    <li class="channel__item">
+                      <a href="">
+                        <img class="channel__img--right" src="./images/cate1.webp" alt=""></a>
+                    </li>
+                    <li class="channel__item">
+                      <a href="">
+                        <img class="channel__img--right" src="./images/cate1.webp" alt=""></a>
+                    </li>
+                    <li class="channel__item">
+                      <a href="">
+                        <img class="channel__img--right" src="./images/cate1.webp" alt=""></a>
+                    </li>
+                    <li class="channel__item">
+                      <a href="">
+                        <img class="channel__img--right" src="./images/cate1.webp" alt=""></a>
+                    </li>
+                    <li class="channel__item">
+                      <a href="">
+                        <img class="channel__img--right" src="./images/cate1.webp" alt=""></a>
+                    </li>
+                  </ul>
+                  <ul class="clearfix">
+                    <li class="channel__item-bottom"><a href=""><img class="channel__img--bottom"
+                          src="./images/cate.webp" alt=""></a>
+                    </li>
+                    <li class="channel__item-bottom"><a href=""><img class="channel__img--bottom"
+                          src="./images/cate.webp" alt=""></a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper">
+          <span class="swiper__prev"><i class="iconfont iconfanhui"></i></span>
+          <div class="swiper__slide-box swiper__slide1">
+            <a class="swiper__slide-to" href=""><img class="swiper__slide-img" src="./images/d.webp" alt=""></a>
+          </div>
+          <div class="swiper__slide-box swiper__slide2">
+            <a class="swiper__slide-to" href=""><img class="swiper__slide-img" src="./images/ee.webp" alt=""></a>
+          </div>
+          <div class="swiper__slide-box swiper__slide3">
+            <a class="swiper__slide-to" href=""><img class="swiper__slide-img" src="./images/f.webp" alt=""></a>
+          </div>
+          <ul class="swiper__indicators-box clearfix">
+            <li class="swiper__indicators-btn"><span></span></li>
+            <li class="swiper__indicators-btn"><span></span></li>
+            <li class="swiper__indicators-btn"><span></span></li>
+          </ul>
+          <span class="swiper__next"><i class="iconfont iconxiangyouxuanze"></i> </span>
+        </div>
+        <div class="recommend">
+          <span class="recommend__prev"><i class="iconfont iconfanhui"></i></span>
+          <ul class="recommend__box">
+            <li class="recommend__item"><a class="recommend__to" href=""><img class="recommend__img"
+                  src="./images/aa.webp" alt=""></a></li>
+            <li class="recommend__item"><a class="recommend__to" href=""><img class="recommend__img"
+                  src="./images/aa.webp" alt=""></a></li>
+            <li class="recommend__item"><a class="recommend__to" href=""><img class="recommend__img"
+                  src="./images/aa.webp" alt=""></a></li>
+          </ul>
+          <span class="recommend__next"><i class="iconfont iconxiangyouxuanze"></i> </span>
+        </div>
+        <div class="min-nav">
+          <div class="login">
+            <div class="login__inner">
+              <a href=""><img class="login__user-img" src="./images/author.png" alt=""></a>
+              <div class="login__user-item">
+                <p><a class="login__user-to" href="">Hi~欢迎逛京东！</a></p>
+                <span><a class="login__user-to" href="">登录</a></span> |
+                <span><a class="login__user-to" href="">注册</a></span>
+              </div>
+            </div>
+            <div class="login__profit-div">
+              <a class="login__profit" href="">新人福利</a>
+              <a class="login__profit login__profit-plus" href="">PLUS会员</a>
+            </div>
+          </div>
+          <div class="news-hot">
+            <div class="news-hot__bulletin">
+              <h4>京东快报</h4><a href="" class="news-hot__more">更多<i class="iconfont iconxiangyouxuanze"></i></a>
+            </div>
+            <div>
+              <div class="news-hot__item">
+                <a class="news-hot__to" href="">
+                  <span class="news-hot__tag">热门</span>康佳涡轮洗衣机，让洗衣服更简单
+                </a>
+              </div>
+              <div class="news-hot__item">
+                <a class="news-hot__to" href="">
+                  <span class="news-hot__tag">热门</span>康佳涡轮洗衣机，让洗衣服更简单
+                </a>
+              </div>
+              <div class="news-hot__item">
+                <a class="news-hot__to" href="">
+                  <span class="news-hot__tag">热门</span>康佳涡轮洗衣机，让洗衣服更简单
+                </a>
+              </div>
+              <div class="news-hot__item">
+                <a class="news-hot__to" href="">
+                  <span class="news-hot__tag">热门</span>康佳涡轮洗衣机，让洗衣服更简单
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <ul class="clearfix">
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+              <li class="service__item"><a class="service__to" href="">
+                  <img class="service__img" src="./images/i.png" alt="">
+                  <span>话费</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 京东秒杀部分 -->
+    <div class="seckill_div">
+      <div class="seckill">
+        <a class="seckill__time" href="">
+          <h3 class="seckill__title">京东秒杀</h3>
+          <p class="seckill__field"><b>18:00</b> 点场 距结束</p>
+          <ul class="seckill__inner">
+            <li class="seckill__timmer--unit">00</li>
+            <li class="seckill__timmer--unit">:</li>
+            <li class="seckill__timmer--unit">44</li>
+            <li class="seckill__timmer--unit">:</li>
+            <li class="seckill__timmer--unit">17</li>
+          </ul>
+        </a>
+        <div class="seckill__goods">
+          <a href="" class="seckill__goods-items">
+            <img class="seckill__goods-img" src="./images/q.webp" alt="">
+            <h6 class="seckill__item-name">【限量款丨买一贈一】锐舞 华为mate40pro钢化膜Pro+/RS保时捷手机保护全屏覆盖防爆膜 官配定制膜丨无缝贴合丨触控灵敏丨买一贈一
+              真机实测丨贴坏用坏包赔
+            </h6>
+            <div class="seckill__money">
+              <p class="seckill__money-item-top">￥687.00</p>
+              <p class="seckill__money-item-bottom">￥899.00</p>
+            </div>
+          </a>
+          <a href="" class="seckill__goods-items">
+            <img class="seckill__goods-img" src="./images/q.webp" alt="">
+            <h6 class="seckill__item-name">【限量款丨买一贈一】锐舞 华为mate40pro钢化膜Pro+/RS保时捷手机保护全屏覆盖防爆膜 官配定制膜丨无缝贴合丨触控灵敏丨买一贈一
+              真机实测丨贴坏用坏包赔
+            </h6>
+            <div class="seckill__money">
+              <p class="seckill__money-item-top">￥687.00</p>
+              <p class="seckill__money-item-bottom">￥899.00</p>
+            </div>
+          </a>
+          <a href="" class="seckill__goods-items">
+            <img class="seckill__goods-img" src="./images/q.webp" alt="">
+            <h6 class="seckill__item-name">【限量款丨买一贈一】锐舞 华为mate40pro钢化膜Pro+/RS保时捷手机保护全屏覆盖防爆膜 官配定制膜丨无缝贴合丨触控灵敏丨买一贈一
+              真机实测丨贴坏用坏包赔
+            </h6>
+            <div class="seckill__money">
+              <p class="seckill__money-item-top">￥687.00</p>
+              <p class="seckill__money-item-bottom">￥899.00</p>
+            </div>
+          </a>
+          <a href="" class="seckill__goods-items">
+            <img class="seckill__goods-img" src="./images/q.webp" alt="">
+            <h6 class="seckill__item-name">【限量款丨买一贈一】锐舞 华为mate40pro钢化膜Pro+/RS保时捷手机保护全屏覆盖防爆膜 官配定制膜丨无缝贴合丨触控灵敏丨买一贈一
+              真机实测丨贴坏用坏包赔
+            </h6>
+            <div class="seckill__money">
+              <p class="seckill__money-item-top">￥687.00</p>
+              <p class="seckill__money-item-bottom">￥899.00</p>
+            </div>
+          </a>
+        </div>
+        <div class="seckill__brand">
+          <a class="seckill__brand-to" href="">
+            <img class="seckill__brand-img" src="./images/12.webp" alt="">
+            <p class="seckill__brand-info">套装礼盒品类秒杀日</p>
+            <h4 class="seckill__brand-title">大牌美妆低至买1赠1</h4>
+            <button class="seckill__brand-btn">品类秒杀 ><i class="iconfont iconxiangyouxuanze"></i></button>
+          </a>
+
+        </div>
+
+      </div>
+      <div class="elevator elevator_fix">
+        <ul class="elevator_list">
+          <li class="elevator_item">
+            <a class="elevator_lk" href="">
+              <div>
+                <span class="elevator_lk_bg"></span>
+                <span class="elevator_lk_text">京东秒杀</span>
+              </div>
+            </a>
+          </li>
+          <li class="elevator_item">
+            <a class="elevator_lk" href="">
+              <div>
+                <span class="elevator_lk_bg"></span>
+                <span class="elevator_lk_text">特色优选</span>
+              </div>
+            </a>
+          </li>
+          <li class="elevator_item">
+            <a class="elevator_lk" href="">
+              <div>
+                <span class="elevator_lk_bg"></span>
+                <span class="elevator_lk_text">频道广场</span>
+              </div>
+            </a>
+          </li>
+          <li class="elevator_item">
+            <a class="elevator_lk" href="">
+              <div>
+                <span class="elevator_lk_bg"></span>
+                <span class="elevator_lk_text">为你推荐</span>
+              </div>
+            </a>
+          </li>
+          <li class="elevator_item">
+            <a class="elevator_lk" href="">
+              <div>
+                <span class="elevator_lk_bg"></span>
+                <span class="elevator_lk_text">在线客服</span>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- 每日特价 -->
+    <div>
+      <div class="jd-core1">
+        <!-- 左边 -->
+        <div class="special-offer">
+          <!-- 上部分 -->
+          <div class="special-offer__top clearfix">
+            <a class="special-offer__left" href="">
+              <h3>每日特价</h3><i class="iconfont iconxiangyouxuanze"></i>
+            </a>
+            <ul class="special-offer__right clearfix">
+              <li class="special-offer__item"><a class="special-offer__to-target" href="">精选</a></li>
+              <li class="special-offer__item"><a class="special-offer__to-target" href="">美食</a></li>
+              <li class="special-offer__item"><a class="special-offer__to-target" href="">百货</a></li>
+              <li class="special-offer__item"><a class="special-offer__to-target" href="">个护</a></li>
+            </ul>
+          </div>
+          <!-- 下面部分 -->
+          <div class="special-offer__main clearfix">
+            <div class="special-offer__left-item ">
+              <a class="special-offer__lk" href="">
+                <span class="special-offer__tag">247天最低价</span>
+                <img class="special-offer__title-img" src="./images/sd.webp" alt="">
+                <p class="special-offer__item-name"> 潘婷 70ml 两支</p>
+                <div class="special-offer__price">
+                  <span class="special-offer__price-true">$20.3</span><span
+                    class="special-offer__price-false">$26</span>
+                </div>
+                <span class="special-offer__robbed">已抢200件</span>
+              </a>
+            </div>
+            <div class="special-offer__right-item">
+              <div class="special-offer__tab">1</div>
+              <div class="special-offer__tab">2</div>
+              <div class="special-offer__tab">3</div>
+              <div class="special-offer__tab">4</div>
+            </div>
+          </div>
+        </div>
+        <!-- 右边 -->
+        <div class="lightning-buy"></div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="wrapper">
+        <div class="service-bottom">
+          <div class="service-bottom__item">
+            <h3 class="service-bottom__title">多</h3>
+            <p class="service-bottom__txt">品类齐全，轻松购物</p>
+          </div>
+          <div class="service-bottom__item">
+            <h3 class="service-bottom__title">多</h3>
+            <p class="service-bottom__txt">品类齐全，轻松购物</p>
+          </div>
+          <div class="service-bottom__item">
+            <h3 class="service-bottom__title">多</h3>
+            <p class="service-bottom__txt">品类齐全，轻松购物</p>
+          </div>
+          <div class="service-bottom__item">
+            <h3 class="service-bottom__title">多</h3>
+            <p class="service-bottom__txt">品类齐全，轻松购物</p>
+          </div>
+        </div>
+      </div>
+      <span class="wire"></span>
+      <div class="wrapper">
+        <!-- 实线下方第一层 -->
+        <div class="help-nav">
+          <dl class="help-nav__items">
+            <dt>购物指南</dt>
+            <dd><a href="">购物流程</a></dd>
+            <dd><a href="">会员介绍</a></dd>
+            <dd><a href="">常见问题</a></dd>
+            <dd><a href="">大家电</a></dd>
+            <dd><a href="">联系客服</a></dd>
+            <dd><a href="">联系客服</a></dd>
+          </dl>
+          <dl class="help-nav__items">
+            <dt>购物指南</dt>
+            <dd><a href="">购物流程</a></dd>
+            <dd><a href="">会员介绍</a></dd>
+            <dd><a href="">常见问题</a></dd>
+            <dd><a href="">大家电</a></dd>
+            <dd><a href="">联系客服</a></dd>
+            <dd><a href="">联系客服</a></dd>
+          </dl>
+          <dl class="help-nav__items">
+            <dt>购物指南</dt>
+            <dd><a href="">购物流程</a></dd>
+            <dd><a href="">会员介绍</a></dd>
+            <dd><a href="">常见问题</a></dd>
+            <dd><a href="">大家电</a></dd>
+            <dd><a href="">联系客服</a></dd>
+            <dd><a href="">联系客服</a></dd>
+          </dl>
+          <dl class="help-nav__items">
+            <dt>购物指南</dt>
+            <dd><a href="">购物流程</a></dd>
+            <dd><a href="">会员介绍</a></dd>
+            <dd><a href="">常见问题</a></dd>
+            <dd><a href="">大家电</a></dd>
+            <dd><a href="">联系客服</a></dd>
+            <dd><a href="">联系客服</a></dd>
+          </dl>
+          <dl class="help-nav__items">
+            <dt>购物指南</dt>
+            <dd><a href="">购物流程</a></dd>
+            <dd><a href="">会员介绍</a></dd>
+            <dd><a href="">常见问题</a></dd>
+            <dd><a href="">大家电</a></dd>
+            <dd><a href="">联系客服</a></dd>
+            <dd><a href="">联系客服</a></dd>
+          </dl>
+          <div class="help-nav__cover">
+            <h4>京东自营覆盖区县</h4>
+            <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+            <a href="">查看详情</a>
+          </div>
+        </div>
+        <!-- 实线下方第二层  -->
+        <div class="copyright">
+          <!-- 上面部分 -->
+          <ul class="copyright__links">
+            <li><a href="">关于我们</a></li>
+            <li>|</li>
+            <li><a href="">联系我们</a></li>
+            <li>|</li>
+            <li><a href="">联系客服</a></li>
+            <li>|</li>
+            <li><a href="">合作招商</a></li>
+            <li>|</li>
+            <li><a href="">商家帮助</a></li>
+            <li>|</li>
+            <li><a href="">营销中心</a></li>
+            <li>|</li>
+            <li><a href="">手机京东</a></li>
+            <li>|</li>
+            <li><a href="">友情链接</a></li>
+            <li>|</li>
+            <li><a href="">销售联盟</a></li>
+            <li>|</li>
+            <li><a href="">京东社区</a></li>
+            <li>|</li>
+            <li><a href="">京东公益</a></li>
+            <li>|</li>
+            <li><a href="">京东社区</a></li>
+            <li>|</li>
+            <li><a href="">京东公益</a></li>
+            <li>|</li>
+            <li><a href="">English Site</a></li>
+            <li>|</li>
+            <li><a href="">Media & IR</a></li>
+          </ul>
+          <!-- 下面的 -->
+          <div class="copyright__inner">
+            <ul>
+              <li><a href="">京公网安备 11000002000088号</a></li>
+              <li>|</li>
+              <li><a href="">京ICP备11041704号</a></li>
+              <li>|</li>
+              <li><a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a></li>
+              <li>|</li>
+              <li><a href="">新出发京零 字第大120007号 </a></li>
+            </ul>
+            <ul>
+              <li><a href="">互联网出版许可证编号新出网证(京)字150号 </a></li>
+              <li>|</li>
+              <li><a href="">出版物经营许可证 </a></li>
+              <li>|</li>
+              <li><a href="">网络文化经营许可证京网文[2020]6112-1201号 </a></li>
+              <li>|</li>
+              <li><a href="">违法和不良信息举报电话：4006561155 </a></li>
+            </ul>
+            <ul>
+              <li><a href="">Copyright © 2004 - 2021 京东JD.com 版权所有 </a></li>
+              <li>|</li>
+              <li><a href="">消费者维权热线：4006067733 </a></li>
+              <li>|</li>
+              <li><a href="">经营证照 </a></li>
+              <li>|</li>
+
+              <li><a href="">(京)网械平台备字(2018)第00003号 </a></li>
+              <li>|</li>
+              <li><a href="">营业执照 </a></li>
+            </ul>
+            <ul>
+              <li><a href="">Global Site </a></li>
+              <li>|</li>
+              <li><a href="">Сайт России </a></li>
+              <li>|</li>
+              <li><a href="">Situs Indonesia </a></li>
+              <li>|</li>
+              <li><a href="">Сайт России </a></li>
+              <li>|</li>
+              <li><a href="">Sitio de España </a></li>
+              <li>|</li>
+
+              <li><a href="">เว็บไซต์ประเทศไทย</a></li>
+            </ul>
+            <br>
+            <ul>
+              <li><a href="">京东旗下网站：京东钱包 </a></li>
+              <li>|</li>
+              <li><a href="">京东云 </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

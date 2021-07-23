@@ -1,0 +1,246 @@
+.seckill_div {
+  margin-top: 30px;
+
+}
+
+.seckill {
+  display: flex;
+  height: 260px;
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.seckill__goods a:hover {
+  color: red;
+}
+
+
+.seckill__time {
+  width: 190px;
+  background-image: url("../images/z.png");
+  color: white;
+  text-align: center;
+}
+
+.seckill__title {
+  margin-top: 30px;
+  font: normal bold 30px "";
+}
+
+.seckill__field {
+  margin-top: 100px;
+  font: normal 400 16px "";
+}
+
+.seckill__inner {
+  margin-top: 10px;
+
+}
+
+.seckill__timmer--unit {
+  float: left;
+  font: normal 700 20px "";
+}
+
+.seckill__timmer--unit:nth-child(odd) {
+  padding: 1px 3px;
+  background-color: #000;
+}
+
+.seckill__timmer--unit:nth-child(even) {
+  margin: 0 6px;
+}
+
+.seckill__timmer--unit:first-child {
+  margin-left: 30px;
+}
+
+.seckill__goods {
+  background-color: white;
+}
+
+.seckill__goods-items {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+
+.seckill__goods-items:hover img {
+  opacity: 0.7;
+}
+
+.seckill__goods-items::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-image: linear-gradient(to bottom, transparent, rgba(204, 204, 204, 0.5), transparent);
+}
+
+.seckill__goods-img {
+  width: 200px;
+  height: 185px;
+  /* 小手触碰变换时间 */
+  transition: all 0.5s;
+}
+
+.seckill__item-name {
+  color: #333;
+  padding: 0 10px;
+  /* 不显示超过对象尺寸的内容 */
+  overflow: hidden;
+  /* 默认处理方式。文本自动处理换行。假如抵达容器边界内容会转到下一行 */
+  white-space: nowrap;
+  /* 当对象内文本溢出时显示省略标记(...) */
+  text-overflow: ellipsis;
+
+}
+
+.seckill__money {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 160px;
+  height: 25px;
+  margin: 5px auto;
+  border: 1px solid red;
+  background-color: white;
+  text-align: center;
+  line-height: 25px;
+}
+
+.seckill__money::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 76px;
+  border-left: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-top: 23px solid red;
+  border-right: 16px solid white;
+}
+
+.seckill__money-item-top {
+  flex: auto;
+  height: 25px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.seckill__money-item-bottom {
+  flex: auto;
+  color: #ccc;
+  font-size: 14px;
+  /* 中划线 */
+  text-decoration: line-through;
+}
+
+.seckill__brand {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+}
+
+.seckill__brand-to {
+  display: flex;
+  /* 元素上下对齐 */
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, transparent, #eff0f5);
+}
+
+.seckill__brand-to:hover img {
+  opacity: 0.7;
+}
+
+.seckill__brand-img {
+  width: 120px;
+  margin: 20px 0 10px;
+}
+
+.seckill__brand-info {
+  color: #9e9d9d;
+  font-size: 14px;
+}
+
+.seckill__brand-title {
+  margin: 5px 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.seckill__brand-btn {
+  width: 90px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+  border-radius: 16px;
+  color: red;
+  font-weight: bold;
+}
+
+.seckill__brand-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.elevator {
+  left: 50%;
+  margin-left: 615px;
+}
+
+.elevator_lk {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  z-index: 1;
+}
+
+.elevator_lk:after {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -20px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+  z-index: 1;
+  content: "";
+}
+
+.elevator_lk_bg {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  z-index: 2;
+}
+
+.elevator_lk_text {
+  position: relative;
+  z-index: 3;
+}
+
+.elevator_lk:hover {
+  background-color: #e1251b;
+  color: #eee;
+}
+.elevator_fix { 
+  position: fixed;
+  top: 75px;
+}
